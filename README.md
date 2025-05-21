@@ -1,12 +1,15 @@
-📚 Sistema de Gestão de Cursos e Alunos
-Uma aplicação web para administrar matrículas, cursos e informações de alunos.
+# **📚 Sistema de Gestão de Cursos e Alunos**  
 
-🚀 Visão Geral
-Este projeto é um sistema de gerenciamento desenvolvido em Django, que permite:
+**Uma aplicação web para administrar matrículas, cursos e informações de alunos.**  
+
+---
+
+## **🚀 Visão Geral**  
+Este projeto é um sistema de gerenciamento desenvolvido em **Django**, que permite:
 ✅ Cadastrar alunos e seus cursos
 📚 Adicionar detalhes dos cursos (nome, descrição, imagem)
 👨‍🎓 Visualizar informações dos alunos e seus cursos vinculados
-🔒 Acesso administrativo para gestão completa
+🔒 Acesso administrativo para gestão completa 
 
 ---
 
