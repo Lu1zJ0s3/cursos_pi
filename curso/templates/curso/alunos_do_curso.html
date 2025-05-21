@@ -1,0 +1,24 @@
+<!-- filepath: c:\Users\Luiz\Documents\Trabalho\teste\cursos_pi\curso\templates\curso\alunos_do_curso.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alunos do Curso {{ curso.nome }}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Alunos do Curso: {{ curso.nome }}</h2>
+        <ul class="list-group">
+            {% for aluno in alunos %}
+                <li class="list-group-item">
+                    {{ aluno.nome }} - {{ aluno.email }} - {{ aluno.telefone }}
+                </li>
+            {% empty %}
+                <li class="list-group-item">Nenhum aluno cadastrado neste curso.</li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'index' %}" class="btn btn-secondary mt-3">Voltar</a>
+    </div>
+</body>
+</html>

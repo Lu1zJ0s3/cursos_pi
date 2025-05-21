@@ -12,7 +12,7 @@ class Curso(models.Model):
     descricao = models.TextField()
     vagas = models.IntegerField()
     inscritos = models.IntegerField()
-    modalidade = models.ForeignKey(Modalidade, on_delete=models.CASCADE)
+    modalidade = models.ForeignKey(Modalidade, on_delete=models.SET_NULL, null=True)
     imagem = models.ImageField(upload_to='capas/', null=True, blank=True)
     def __str__(self):
         return self.nome
@@ -22,6 +22,6 @@ class Aluno(models.Model):
     email = models.EmailField()
     telefone = models.CharField(max_length=15)
     data_nascimento = models.DateField()
-    curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
+    curso = models.ForeignKey(Curso, on_delete=models.SET_NULL, null=True)
     def __str__(self):
         return self.nome    

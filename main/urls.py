@@ -23,6 +23,7 @@ from main import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
+    path('curso/<int:curso_id>/alunos/', views.alunos_do_curso, name='alunos_do_curso'),
 ]
 
 if settings.DEBUG:
